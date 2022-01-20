@@ -156,7 +156,7 @@ void soundPanicReset(void);	// mixer.c
 //sdword soundinit(HWND hWnd, sdword mode);
 sdword soundinit(bool mode);
 //sdword soundreinit(HWND hWnd);
-sdword soundreinit();
+sdword soundreinit(void);
 void soundrestore(void);
 void soundclose(void);
 void soundupdate(void);

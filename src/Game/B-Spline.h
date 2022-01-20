@@ -66,8 +66,8 @@ splinecurve;
     Functions:
 =============================================================================*/
 
-void bsStartup();
-void bsShutdown();
+void bsStartup(void);
+void bsShutdown(void);
 
 splinecurve *bsCurveStart(sdword nPoints, real32 *points, real32 *times, tcb *params, bool bAlloc);
 void bsCurveStartPrealloced(splinecurve *curve, sdword nPoints, real32 *values, real32 *times, tcb *params);

@@ -294,14 +294,14 @@ void titanSendPointMessage(int playerIndex,unsigned char *packet,unsigned int si
 void titanSendBroadcastMessage(unsigned char *packet,unsigned int sizeofPacket);
 void titanAnyoneSendPointMessage(int playerIndex,unsigned char *packet,unsigned int sizeofPacket);
 void titanAnyoneSendBroadcastMessage(unsigned char *packet,unsigned int sizeofPacket);
-void titanPumpEngine();
+void titanPumpEngine(void);
 
 void titanSetGameKey(unsigned char *key);
 const unsigned char *titanGetGameKey(void);
 
 // callback for when titan gets valid version strings (one string, multiple version strings seperated by tabs)
 void titanGotValidVersionStrings(char *validversions);
-void titanResetValidVersions();     // clears ValidVersions string
+void titanResetValidVersions(void);     // clears ValidVersions string
 
 Address titanGetMyPingAddress(void);
 
@@ -326,10 +326,10 @@ enum { GAME_NOT_STARTED, GAME_STARTING, GAME_STARTED } mGameCreationState;
 
 signed long titanRequestReceivedCB(Address *address,const void *blob,unsigned short bloblen);
 
-void tpLockChannelList();
-void tpUnLockChannelList();
-void tpLockServerList();
-void tpUnLockServerList();
+void tpLockChannelList(void);
+void tpUnLockChannelList(void);
+void tpLockServerList(void);
+void tpUnLockServerList(void);
 
 //void titanGetMyAddress(Address *address);
 
@@ -386,7 +386,7 @@ void mgNotifyKickedOut(void);
 void cNotifyChatInfo(void);
 
 void cNotifyDirStatus(short theStatus);
-void mgNotifyDirRequestFailed();
+void mgNotifyDirRequestFailed(void);
 
 void cNotifyGameCreationStatus(short theStatus);
 
@@ -408,7 +408,7 @@ void mgGameListNew(void);
 
 int titanLoadPublicKey(char *filename,unsigned char **buffer);
 
-int titanSaveWonstuff();
+int titanSaveWonstuff(void);
 
 extern Address myAddress;
 
@@ -462,7 +462,7 @@ extern wchar_t GameWereInterestedIn[MAX_TITAN_GAME_NAME_LEN];
 extern void *GameWereInterestedInMutex;
 
 void mgGameInterestedIn(wchar_t *interested);
-void mgGameInterestedOff();
+void mgGameInterestedOff(void);
 
 extern unsigned long TitanReadyToShutdown;
 extern unsigned long WAIT_SHUTDOWN_MS;

@@ -91,8 +91,8 @@ typedef struct
 
 extern CallBacks callbacks;
 
-void taskCallBackInit();
-void taskCallBackShutDown();
+void taskCallBackInit(void);
+void taskCallBackShutDown(void);
 BabyCallBack *taskCallBackRegister(babyFuncCB callback, udword num, void *data, real32 callintime);
 void taskCallBackRemove(BabyCallBack *babytogobyebye);
 // void taskCallBackProcess();

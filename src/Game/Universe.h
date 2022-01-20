@@ -257,7 +257,7 @@ typedef struct
     char names[MAX_MULTIPLAYER_PLAYERS+1][20];
 }GameStatsDebugHeader;
 
-void gameStatsInitLog();
+void gameStatsInitLog(void);
 void gameStatsUpdateLogFile(sdword framenum);
 
 #endif

@@ -324,7 +324,7 @@ void fft_5(float aRe[], float aIm[])
   aRe[4]=s2_re - s3_re; aIm[4]=s2_im - s3_im;
 }   /* fft_5 */
 
-void fft_8()
+void fft_8(void)
 {
   float  aRe[4], aIm[4], bRe[4], bIm[4], gem;
 
@@ -361,7 +361,7 @@ void fft_8()
   zIm[3] = aIm[3] + bIm[3]; zIm[7] = aIm[3] - bIm[3];
 }   /* fft_8 */
 
-void fft_10()
+void fft_10(void)
 {
   float  aRe[5], aIm[5], bRe[5], bIm[5];
 

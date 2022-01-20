@@ -383,7 +383,7 @@ bool aiuFindCloakersInEnemyShipsIAmAwareOf(bool Red_Alert);
     Blob Utility Functions:
 -----------------------------------------------------------------------------*/
 //returns the number of enemy blobs
-udword aiuGetNumEnemyBlobs();
+udword aiuGetNumEnemyBlobs(void);
 
 //fills the EnemyShipsIAmAwareOf arrays in the aiplayer struct
 void aiuUpdateKnowledgeOfEnemyShips(struct AIPlayer *aiplayer);

@@ -39,6 +39,11 @@ extern char curFilename[];
 
 %}
 
+%{
+int yylex();
+int yyerror(char *s);
+%}
+
 %union {
     char    *string;    /* string buffer */
     int     number;     /* numeric value */

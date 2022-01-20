@@ -161,7 +161,7 @@ void globalsResetFunc(bool firstTime);
 #define globalsReset()  globalsResetFunc(0)
 #define globalsInit() globalsResetFunc(1)
 
-void globalsClose();
+void globalsClose(void);
 
 #endif
 

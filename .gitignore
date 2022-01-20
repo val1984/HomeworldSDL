@@ -1,6 +1,7 @@
 *.big
 *.wxd
 *.vce
+.DS_Store
 
 Mac/build
 Mac/Homeworld.xcodeproj/*.mode*

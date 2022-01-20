@@ -37,7 +37,7 @@
 
 /* function prototypes */
 void isoundmixerthreadSDL(void *dummy);
-void isoundmixerqueueSDL();
+void isoundmixerqueueSDL(uint8_t *stream, int len);
 sdword isoundmixerprocess(void *pBuf1, udword nSize1, void *pBuf2, udword nSize2);
 sdword isoundmixerdecodeEffect(sbyte *readptr, real32 *writeptr1, real32 *writeptr2, ubyte *exponent, sdword size, uword bitrate, EFFECT *effect);
 #define isoundmixerdecode(a, b, c, d, e, f)		isoundmixerdecodeEffect(a, b, c, d, e, f, NULL);
@@ -458,7 +458,7 @@ sdword isoundmixerprocess(void *pBuf1, udword nSize1, void *pBuf2, udword nSize2
 					/* do the EQ and Delay or Acoustic Model stuff */
 					if (pqueue->eq != NULL)
 					{
-						if (pqueue->eq->flags && STREAM_FLAGS_EQ)
+						if (pqueue->eq->flags & STREAM_FLAGS_EQ)
 						{
 							/* equalize this sucker */
 							fqEqualize(pchan->mixbuffer1, pqueue->eq->eq);

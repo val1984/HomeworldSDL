@@ -104,7 +104,7 @@ int fqLimitE(float *aBlock,EFFECT *rEffect);
 int rrand(int nDummy);
 
 // Math functions
-float gaussian();
+float gaussian(void);
 
 #ifdef __cplusplus
 }		// extern "C"

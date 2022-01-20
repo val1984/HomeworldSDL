@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 42;
+	objectVersion = 45;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -598,6 +598,8 @@
 		90BD9385064AEF43003E3D39 /* SensorArray.c in Sources */ = {isa = PBXBuildFile; fileRef = 90BD9333064AEF43003E3D39 /* SensorArray.c */; };
 		90BD9387064AEF43003E3D39 /* StandardDestroyer.c in Sources */ = {isa = PBXBuildFile; fileRef = 90BD9335064AEF43003E3D39 /* StandardDestroyer.c */; };
 		90BD9389064AEF43003E3D39 /* StandardFrigate.c in Sources */ = {isa = PBXBuildFile; fileRef = 90BD9337064AEF43003E3D39 /* StandardFrigate.c */; };
+		A72DFFBB2797788300EAD09D /* Headers in Headers */ = {isa = PBXBuildFile; fileRef = A72DFFBA2797788300EAD09D /* Headers */; };
+		A72DFFBD27977C7B00EAD09D /* SDL2.framework in Headers */ = {isa = PBXBuildFile; fileRef = A72DFFBC27977C7B00EAD09D /* SDL2.framework */; };
 		EDB88AFF0EBF5AAA00D2C5CF /* fqcodec.c in Sources */ = {isa = PBXBuildFile; fileRef = EDB88AF80EBF5AAA00D2C5CF /* fqcodec.c */; };
 		EDB88B000EBF5AAA00D2C5CF /* fquant.c in Sources */ = {isa = PBXBuildFile; fileRef = EDB88AF90EBF5AAA00D2C5CF /* fquant.c */; };
 		EDB88B010EBF5AAA00D2C5CF /* fqeffect.c in Sources */ = {isa = PBXBuildFile; fileRef = EDB88AFA0EBF5AAA00D2C5CF /* fqeffect.c */; };
@@ -620,19 +622,17 @@
 
 /* Begin PBXFileReference section */
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
-		1793E3D6237095FD006F67CB /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDL2.framework; sourceTree = "<group>"; };
+		1793E3D6237095FD006F67CB /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = /Users/valentin/Developer/HomeworldSDL/Mac/../../../../../Library/Frameworks/SDL2.framework; sourceTree = "<absolute>"; };
 		1793E3E12371F080006F67CB /* Homeworld.big */ = {isa = PBXFileReference; lastKnownFileType = file; name = Homeworld.big; path = ../Homeworld.big; sourceTree = "<group>"; };
 		1793E3E22371F080006F67CB /* HW_Music.wxd */ = {isa = PBXFileReference; lastKnownFileType = file; name = HW_Music.wxd; path = ../HW_Music.wxd; sourceTree = "<group>"; };
 		1793E3E32371F081006F67CB /* Update.big */ = {isa = PBXFileReference; lastKnownFileType = file; name = Update.big; path = ../Update.big; sourceTree = "<group>"; };
 		1793E3E42371F081006F67CB /* HomeworldSDL.big */ = {isa = PBXFileReference; lastKnownFileType = file; name = HomeworldSDL.big; path = ../HomeworldSDL.big; sourceTree = "<group>"; };
 		1793E3E52371F081006F67CB /* HW_Comp.vce */ = {isa = PBXFileReference; lastKnownFileType = file; name = HW_Comp.vce; path = ../HW_Comp.vce; sourceTree = "<group>"; };
-		35017184077C54EA00684108 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/HomeworldPlist.strings; sourceTree = "<group>"; };
 		3507A5190B0FA60200E374C5 /* Trails.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = Trails.c; sourceTree = "<group>"; };
 		3507A51A0B0FA60200E374C5 /* Trails.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Trails.h; sourceTree = "<group>"; };
 		3507A5780B0FBB0B00E374C5 /* Subtitle.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = Subtitle.c; sourceTree = "<group>"; };
 		3507A5790B0FBB0B00E374C5 /* Subtitle.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Subtitle.h; sourceTree = "<group>"; };
 		351B671C077E3D80002ABC6E /* Raider Retreat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Raider Retreat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		351B67AA077E4728002ABC6E /* English */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/RaiderRetreatPlist.strings; sourceTree = "<group>"; };
 		3522273F0BB9D92500E42E42 /* standard_library.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = standard_library.h; sourceTree = "<group>"; };
 		35517D000732720E00691120 /* Homeworld_Prefix.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Homeworld_Prefix.h; sourceTree = "<group>"; };
 		3578AD060AF40518007BFA9F /* StringSupport.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = StringSupport.c; sourceTree = "<group>"; };
@@ -1200,6 +1200,12 @@
 		90BD9338064AEF43003E3D39 /* StandardFrigate.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = StandardFrigate.h; path = ../src/Ships/StandardFrigate.h; sourceTree = SOURCE_ROOT; };
 		90BD93C1064AF4F3003E3D39 /* SDLMain.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = SDLMain.m; sourceTree = "<group>"; };
 		90BD93C2064AF4F3003E3D39 /* SDLMain.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SDLMain.h; sourceTree = "<group>"; };
+		A72DFFBA2797788300EAD09D /* Headers */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Headers; path = ../../../../../Library/Frameworks/SDL2.framework/Versions/A/Headers; sourceTree = "<group>"; };
+		A72DFFBC27977C7B00EAD09D /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
+		A7F33FCA276E2CB200253593 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/HomeworldPlist.strings; sourceTree = "<group>"; };
+		A7F33FCB276E2CB200253593 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/RaiderRetreatPlist.strings; sourceTree = "<group>"; };
+		A7F34051276E7AE600253593 /* Headers */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Headers; path = ../../../../../Library/Frameworks/SDL2.framework/Versions/A/Headers; sourceTree = "<group>"; };
+		A7F34052276E7C2800253593 /* Headers */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Headers; path = ../../../../../Library/Frameworks/SDL2.framework/Versions/A/Headers; sourceTree = "<group>"; };
 		EDB88AF80EBF5AAA00D2C5CF /* fqcodec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fqcodec.c; sourceTree = "<group>"; };
 		EDB88AF90EBF5AAA00D2C5CF /* fquant.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fquant.c; sourceTree = "<group>"; };
 		EDB88AFA0EBF5AAA00D2C5CF /* fqeffect.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fqeffect.c; sourceTree = "<group>"; };
@@ -1254,6 +1260,9 @@
 		29B97314FDCFA39411CA2CEA /* Homeworld */ = {
 			isa = PBXGroup;
 			children = (
+				A72DFFBC27977C7B00EAD09D /* SDL2.framework */,
+				A7F34052276E7C2800253593 /* Headers */,
+				A72DFFBA2797788300EAD09D /* Headers */,
 				90623BEA064992490088361C /* src */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -1294,6 +1303,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A7F34051276E7AE600253593 /* Headers */,
 				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
 			);
 			name = Frameworks;
@@ -1823,21 +1833,18 @@
 		90BD9206064AEE7A003E3D39 /* SDL */ = {
 			isa = PBXGroup;
 			children = (
-				EDB88AF80EBF5AAA00D2C5CF /* fqcodec.c */,
-				EDB88AF90EBF5AAA00D2C5CF /* fquant.c */,
-				EDB88AFA0EBF5AAA00D2C5CF /* fqeffect.c */,
-				EDB88AFB0EBF5AAA00D2C5CF /* dct.c */,
-				EDB88AFC0EBF5AAA00D2C5CF /* dct.h */,
-				EDB88AFD0EBF5AAA00D2C5CF /* mixfft.h */,
-				EDB88AFE0EBF5AAA00D2C5CF /* mixfft.c */,
-				3522273F0BB9D92500E42E42 /* standard_library.h */,
 				9030AF92066D5D2C00B32218 /* avi.c */,
 				90BD9208064AEE7A003E3D39 /* avi.h */,
+				EDB88AFB0EBF5AAA00D2C5CF /* dct.c */,
+				EDB88AFC0EBF5AAA00D2C5CF /* dct.h */,
 				90BD9210064AEE7A003E3D39 /* devstats.h */,
 				90BD9213064AEE7A003E3D39 /* font.c */,
 				90BD9214064AEE7A003E3D39 /* font.h */,
+				EDB88AF80EBF5AAA00D2C5CF /* fqcodec.c */,
 				90BD9215064AEE7A003E3D39 /* fqcodec.h */,
+				EDB88AFA0EBF5AAA00D2C5CF /* fqeffect.c */,
 				90BD9216064AEE7A003E3D39 /* fqeffect.h */,
+				EDB88AF90EBF5AAA00D2C5CF /* fquant.c */,
 				90BD9217064AEE7A003E3D39 /* fquant.h */,
 				90BD9220064AEE7A003E3D39 /* glinc.h */,
 				90BD9227064AEE7A003E3D39 /* main.c */,
@@ -1845,6 +1852,8 @@
 				90BD9229064AEE7A003E3D39 /* mainrgn.c */,
 				90BD922A064AEE7A003E3D39 /* mainrgn.h */,
 				90BD922B064AEE7A003E3D39 /* mainswitches.h */,
+				EDB88AFE0EBF5AAA00D2C5CF /* mixfft.c */,
+				EDB88AFD0EBF5AAA00D2C5CF /* mixfft.h */,
 				90BD922E064AEE7A003E3D39 /* mouse.c */,
 				90BD922F064AEE7A003E3D39 /* mouse.h */,
 				90BD9230064AEE7A003E3D39 /* prim2d.c */,
@@ -1868,6 +1877,7 @@
 				90BD9243064AEE7A003E3D39 /* soundlow.c */,
 				90BD9245064AEE7A003E3D39 /* soundlow.h */,
 				90BD9248064AEE7A003E3D39 /* sstream.c */,
+				3522273F0BB9D92500E42E42 /* standard_library.h */,
 				90BD924C064AEE7A003E3D39 /* texreg.c */,
 				90BD924D064AEE7A003E3D39 /* texreg.h */,
 				90BD924E064AEE7A003E3D39 /* TimeoutTimer.c */,
@@ -1977,6 +1987,18 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		A7F33FCC276E73BB00253593 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A72DFFBD27977C7B00EAD09D /* SDL2.framework in Headers */,
+				A72DFFBB2797788300EAD09D /* Headers in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		3516C82D077C41B0001AA863 /* Raider Retreat */ = {
 			isa = PBXNativeTarget;
@@ -2002,6 +2024,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 35CC221B0955C2E100504293 /* Build configuration list for PBXNativeTarget "Homeworld" */;
 			buildPhases = (
+				A7F33FCC276E73BB00253593 /* Headers */,
 				355BE77707935BD200F82BB0 /* ShellScript */,
 				1793E3DE2371C0B2006F67CB /* ShellScript */,
 				1793E3E02371C316006F67CB /* ShellScript */,
@@ -2027,16 +2050,18 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 1320;
 			};
 			buildConfigurationList = 35CC22230955C2E100504293 /* Build configuration list for PBXProject "Homeworld" */;
 			compatibilityVersion = "Xcode 2.4";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 1;
 			knownRegions = (
-				English,
-				Japanese,
-				French,
-				German,
+				en,
+				ja,
+				fr,
+				Base,
+				de,
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* Homeworld */;
 			projectDirPath = "";
@@ -2917,7 +2942,7 @@
 		35017183077C54EA00684108 /* HomeworldPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				35017184077C54EA00684108 /* English */,
+				A7F33FCA276E2CB200253593 /* en */,
 			);
 			name = HomeworldPlist.strings;
 			sourceTree = "<group>";
@@ -2925,7 +2950,7 @@
 		351B67AB077E4728002ABC6E /* RaiderRetreatPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				351B67AA077E4728002ABC6E /* English */,
+				A7F33FCB276E2CB200253593 /* en */,
 			);
 			name = RaiderRetreatPlist.strings;
 			sourceTree = "<group>";
@@ -2936,20 +2961,28 @@
 		35CC221C0955C2E100504293 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				CODE_SIGN_IDENTITY = "-";
+				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks;
+				GCC_NO_COMMON_BLOCKS = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					_MACOSX,
 					HW_BUILD_FOR_DEBUGGING,
 					HW_GAME_HOMEWORLD,
 				);
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/SDL2.framework/Headers\"",
+					/Library/Frameworks/SDL2.framework/Versions/A/Headers,
+				);
 				INFOPLIST_FILE = Homeworld.plist;
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks $(LD_RUNPATH_SEARCH_PATHS_$(IS_MACCATALYST))";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks $(LD_RUNPATH_SEARCH_PATHS_$(IS_MACCATALYST)) @loader_path/ /Library/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				OTHER_CFLAGS = "-DHW_BUILD_FOR_DEBUGGING";
+				PRODUCT_BUNDLE_IDENTIFIER = com.homeworldsdl.homeworld;
 				PRODUCT_NAME = Homeworld;
+				REEXPORTED_FRAMEWORK_NAMES = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Development;
@@ -2957,20 +2990,23 @@
 		35CC221D0955C2E100504293 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				CODE_SIGN_IDENTITY = "-";
+				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks;
+				GCC_NO_COMMON_BLOCKS = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					_MACOSX,
 					HW_BUILD_FOR_DISTRIBUTION,
 					HW_GAME_HOMEWORLD,
 				);
 				INFOPLIST_FILE = Homeworld.plist;
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks $(LD_RUNPATH_SEARCH_PATHS_$(IS_MACCATALYST))";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks $(LD_RUNPATH_SEARCH_PATHS_$(IS_MACCATALYST)) @loader_path/ /Library/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				OTHER_CFLAGS = "-DHW_BUILD_FOR_DISTRIBUTION";
+				PRODUCT_BUNDLE_IDENTIFIER = com.homeworldsdl.homeworld;
 				PRODUCT_NAME = Homeworld;
+				REEXPORTED_FRAMEWORK_NAMES = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Deployment;
@@ -2978,18 +3014,23 @@
 		35CC221E0955C2E100504293 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks $(LD_RUNPATH_SEARCH_PATHS_$(IS_MACCATALYST))";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				CODE_SIGN_IDENTITY = "-";
+				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks;
+				GCC_NO_COMMON_BLOCKS = NO;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks $(LD_RUNPATH_SEARCH_PATHS_$(IS_MACCATALYST)) @loader_path/ /Library/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.homeworldsdl.homeworld;
+				REEXPORTED_FRAMEWORK_NAMES = "";
 			};
 			name = Default;
 		};
 		35CC22200955C2E100504293 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -3000,6 +3041,7 @@
 					HW_GAME_RAIDER_RETREAT,
 				);
 				INFOPLIST_FILE = RaiderRetreat.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.homeworldsdl.raiderretreat;
 				PRODUCT_NAME = "Raider Retreat";
 				WRAPPER_EXTENSION = app;
 			};
@@ -3008,6 +3050,8 @@
 		35CC22210955C2E100504293 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -3018,6 +3062,7 @@
 					HW_GAME_RAIDER_RETREAT,
 				);
 				INFOPLIST_FILE = RaiderRetreat.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.homeworldsdl.raiderretreat;
 				PRODUCT_NAME = "Raider Retreat";
 				WRAPPER_EXTENSION = app;
 			};
@@ -3026,10 +3071,13 @@
 		35CC22220955C2E100504293 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.homeworldsdl.raiderretreat;
 			};
 			name = Default;
 		};
@@ -3037,10 +3085,39 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Homeworld_Prefix.h;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/SDL2.framework/Headers\"";
+				ONLY_ACTIVE_ARCH = YES;
 			};
 			name = Development;
 		};
@@ -3048,9 +3125,36 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Homeworld_Prefix.h;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/SDL2.framework/Headers\"";
 			};
 			name = Deployment;
@@ -3058,6 +3162,33 @@
 		35CC22260955C2E100504293 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 			};
 			name = Default;
 		};

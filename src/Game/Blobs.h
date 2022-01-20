@@ -182,8 +182,8 @@ void bobUpdateObjsInBlobCollInfo(blob *thisBlob);
 
 void bobObjectListMedian(vector *dest, real32 *destRadius, sdword nObjects, SpaceObj **objects);
 
-void bobInitProperties();
-void bobResetProperties();
+void bobInitProperties(void);
+void bobResetProperties(void);
 
 #if BOB_STATS
 typedef struct BobStats

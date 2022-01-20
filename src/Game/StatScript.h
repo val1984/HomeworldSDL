@@ -112,7 +112,7 @@ void scriptSetBlobBiggestRadius(char *directory,char *field,void *dataToFillIn);
 // sets all tweakable global variables in game
 void scriptSetTweakableGlobals(void);
 
-void mgGameTypeScriptInit();
+void mgGameTypeScriptInit(void);
 
 #ifdef HW_BUILD_FOR_DEBUGGING
 void CheckValidTacticsClass(TacticsType tactic,ShipClass shipclass,char *field);

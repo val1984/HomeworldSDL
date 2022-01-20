@@ -160,7 +160,7 @@ void cmDeterministicReset(void);
 // Not really a task anymore.
 void cmBuildTaskFunction(void);
 
-void LoadConsMgrDetermOptional();
-void SaveConsMgrDetermOptional();
+void LoadConsMgrDetermOptional(void);
+void SaveConsMgrDetermOptional(void);
 
 #endif

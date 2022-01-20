@@ -12,6 +12,7 @@
 
 #include "SDL.h"
 #include <stdio.h>
+#include "Debug.h"
 
 #include <stdio.h>
 #include <stdlib.h>
