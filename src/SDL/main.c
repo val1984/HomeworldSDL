@@ -169,7 +169,7 @@ bool GLOBAL_NO_TEXTURES = FALSE;
 // turn fullscreen off when debugging so that if the debugger kicks in
 // after a crash you don't find yourself locked out and have to reboot...
 #if defined(_MACOSX) && defined(HW_BUILD_FOR_DEBUGGING) 
-bool fullScreen = TRUE;
+bool fullScreen = FALSE;
 #else
 bool fullScreen = TRUE;
 #endif

@@ -214,7 +214,7 @@ sdword memStartup(void *heapStart, sdword heapSize, memgrowcallback grow)
     char *memNonVolatileFileName;
 #endif
 
-#ifdef _X86_64
+#if defined(__X86_64) || defined(__arm64)
     if ((sizeof(mbhcookie) != 64) || (sizeof(memcookie) != 64))
 #else
     if ((sizeof(mbhcookie) != 32) || (sizeof(memcookie) != 32))

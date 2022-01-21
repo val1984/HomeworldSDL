@@ -67,7 +67,7 @@ madheader *madFileLoad(char *fileName)
     filehandle file;
     sdword fileSize;
 
-#ifdef _X86_64
+#if defined(__X86_64) || defined(__arm64)
     char newFileName[80];
     sprintf(newFileName, "%s.64",fileName);
     fileName = newFileName;

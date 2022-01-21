@@ -379,7 +379,7 @@ av_dump_format(pFormatCtx, 0, filename, 0);
 dbgMessagef("sizeof  AVFormatContext = %d",sizeof(AVFormatContext));
 #endif
 
-#ifndef _X86_64 // Really, really, really must redo this. It's hideous. :(
+#ifndef defined(__X86_64) || defined(__arm64) // Really, really, really must redo this. It's hideous. :(
     if ((sizeof(AVFormatContext) == 3976 ) || (sizeof(AVFormatContext) == 3960 )
 			|| (sizeof(AVFormatContext) == 1336 ) ){   //alligned variables 
 	alignDoubleSet = 1;
@@ -426,7 +426,7 @@ dbgMessagef("aviStart: Found Video Stream= %d.", i);
 dbgMessage("same");
 #endif
 
-#ifdef _X86_64
+#if defined(__X86_64) || defined(__arm64)
         pCodecCtx=pFormatCtx->streams[0]->codec;
 #else
         pCodecCtx=pFormatCtx->streams[videoStream]->codec;

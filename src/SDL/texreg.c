@@ -986,7 +986,7 @@ sdword trTextureUnregister(trhandle handle)
     sdword index = trIndex(handle);
     sdword paletteIndex = trPaletteIndex(handle);
 
-#ifdef _X86_64
+#if defined(__X86_64) || defined(__arm64)
 // Legacy error catching due to not everything working straight away.
 if (handle >= TR_RegistrySize){
     dbgMessagef("Invalid handle %lx in trTextureUnregister",handle);
@@ -1477,7 +1477,7 @@ color *trImageScale(color *data, sdword width, sdword height, sdword newWidth, s
     return(newBuffer);                                      //and allocate the new one
 }
 
-#ifdef _X86_64
+#if defined(__X86_64) || defined(__arm64)
 
 /*-----------------------------------------------------------------------------
     Name        : tr64LifAdjustLoad
@@ -1539,7 +1539,7 @@ lifheader *trLIFFileLoad(char *fileName, udword flags)
 {
     lifheader *newHeader;
 
-#ifdef _X86_64
+#if defined(__X86_64) || defined(__arm64)
     sdword loadLength= 0;
     lifheader *oldHeader;
     loadLength = fileLoadAlloc(fileName, (void**)&oldHeader, flags);             //load in the .LiF file

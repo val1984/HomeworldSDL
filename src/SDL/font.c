@@ -699,7 +699,7 @@ fontheader *fontLoad(char *fileName)
 
     antialias = TRUE;
 
-#ifdef _X86_64
+#if defined(__X86_64) || defined(__arm64)
     char newFileName[80];
     sprintf(newFileName, "%s.64",fileName);
     length = fileLoadAlloc(newFileName, (void **)(&fileHeader), NonVolatile);

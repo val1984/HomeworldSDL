@@ -49,6 +49,10 @@
 #ifdef __x86_64__
   #define _MACOSX_64 1
   #define _MACOSX_FIX_64 1
-  #define _X86_64 1
+  #define __X86_64 1
+#endif
+#ifdef __arm64
+    #define _MACOSX_64 1
+    #define _MACOSX_FIX_64 1
 #endif
 #endif

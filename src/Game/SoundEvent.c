@@ -2728,7 +2728,7 @@ void SEloadbank(void)
 #endif
 
     strcpy(loadfile, SOUNDFXDIR);
-#ifdef _X86_64
+#if defined(__X86_64) || defined(__arm64)
     strcat(loadfile, "Guns.bnk.64");
 #else
     strcat(loadfile, "Guns.bnk");
@@ -2741,7 +2741,7 @@ void SEloadbank(void)
 	}
 
     strcpy(loadfile, SOUNDFXDIR);
-#ifdef _X86_64
+#if defined(__X86_64) || defined(__arm64)
     strcat(loadfile, "Ships.bnk.64");
 #else
     strcat(loadfile, "Ships.bnk");
@@ -2754,7 +2754,7 @@ void SEloadbank(void)
 	}
 
     strcpy(loadfile, SOUNDFXDIR);
-#ifdef _X86_64
+#if defined(__X86_64) || defined(__arm64)
     strcat(loadfile, "SpecialEffects.bnk.64");
 #else
     strcat(loadfile, "SpecialEffects.bnk");
@@ -2768,7 +2768,7 @@ void SEloadbank(void)
 	}
 
     strcpy(loadfile, SOUNDFXDIR);
-#ifdef _X86_64
+#if defined(__X86_64) || defined(__arm64)
     strcat(loadfile, "UI.bnk.64");
 #else
     strcat(loadfile, "UI.bnk");

@@ -106,7 +106,7 @@
 #define TR_PerScaleFactor           (10 * (TR_TexSizesX + TR_TexSizesY))//for adjusting scale factor per-size
 
 //info for texture listing
-#ifdef _X86_64
+#if defined(__X86_64) || defined(__arm64)
 #define TR_LifListing               "textures.ll.64"
 #else
 #define TR_LifListing               "textures.ll"
@@ -228,7 +228,7 @@ typedef struct
     sdword stringLength;                        //length of all strings
     sdword sharingLength;                       //length of all offsets
     sdword totalLength;                         //total length of file, this header not included
-#ifdef _X86_64
+#if defined(__X86_64) || defined(__arm64)
     sdword pad;
 #endif
 }
@@ -264,7 +264,7 @@ typedef struct
 }
 lifheader;
 
-#ifdef _X86_64
+#if defined(__X86_64) || defined(__arm64)
 typedef struct
 {
     char ident[8];                              //compared to "Willy 7"

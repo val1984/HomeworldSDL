@@ -260,7 +260,7 @@ StaticInfo *meshNameToStaticInfo(char *fileName)
         return(NULL);
     }
     type = StrToShipType(typeString);
-#ifdef _X86_64
+#if defined(__X86_64) || defined(__arm64)
     if (type == 0xffffffffffffffff)
 #else
     if (type == 0xffffffff)
@@ -655,7 +655,7 @@ meshdata *meshLoad(char *inFileName)
         fileName = inFileName;
     }
 
-#ifdef _X86_64
+#if defined(__X86_64) || defined(__arm64)
     char newFileName[80];
     sprintf(newFileName, "%s.64",fileName);
     fileName = newFileName;
@@ -1172,7 +1172,7 @@ void meshFree(meshdata *mesh)
             {                                               //for each player
                 if (((trhandle *)mesh->localMaterial[index].texture)[j] != TR_Invalid)
                 {                                           //if this player was this race
-#ifdef _X86_64
+#if defined(__X86_64) || defined(__arm64)
                     if (((trhandle *)mesh->localMaterial[index].texture)[j] != 0xffffffffffffffff) // Check for -1
                     {
                         if (((trhandle *)mesh->localMaterial[index].texture)[j] < TR_RegistrySize ) {
@@ -1180,7 +1180,7 @@ void meshFree(meshdata *mesh)
                 
                     trTextureUnregister(((trhandle *)mesh->localMaterial[index].texture)[j]);
 
-#ifdef _X86_64
+#if defined(__X86_64) || defined(__arm64)
                         }
                     }
 #endif
